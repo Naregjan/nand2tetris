@@ -45,8 +45,6 @@ CHIP ALU {
    // Put you code here:
    //Not(in=zx,out=notzx);
    //Not(in=zy,out=notzy);
-   //And16(a=x,b[0]=notzx,b[1]=notzx,b[2]=notzx,b[3]=notzx,b[4]=notzx,b[5]=notzx,b[6]=notzx,b[7]=notzx,b[8]=notzx,b[9]=notzx,b[10]=notzx,b[11]=notzx,b[12]=notzx,b[13]=notzx,b[14]=notzx,b[15]=notzx,out=zeroedx);
-   //And16(a=x,b[0]=notzy,b[1]=notzy,b[2]=notzy,b[3]=notzy,b[4]=notzy,b[5]=notzy,b[6]=notzy,b[7]=notzy,b[8]=notzy,b[9]=notzy,b[10]=notzy,b[11]=notzy,b[12]=notzy,b[13]=notzy,b[14]=notzy,b[15]=notzy,out=zeroedy);
    
    Mux16(a=x,b[0..15]=false,sel=zx,out=zeroedx);
    Mux16(a=y,b[0..15]=false,sel=zy,out=zeroedy);
