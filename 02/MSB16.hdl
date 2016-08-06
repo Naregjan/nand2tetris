@@ -1,0 +1,12 @@
+/**
+ * MSB16: 
+ * out = in[15]
+ */
+
+CHIP MSB16 {
+    IN in[16];
+    OUT out;
+
+    PARTS:
+    Or(a=in[15],b=false,out=out);
+}
